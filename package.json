@@ -1,0 +1,15 @@
+{
+  "name": "rls-check",
+  "version": "0.1.0",
+  "description": "List the public tables on a Postgres/Supabase database with RLS off, not forced, or still granted to anon. Plus a SQL harness for testing policies in CI.",
+  "type": "module",
+  "bin": { "rls-check": "bin/check.mjs" },
+  "files": ["bin", "harness", "example", "run.sh", "README.md"],
+  "scripts": { "test": "./run.sh --local" },
+  "dependencies": { "pg": "^8.13.0" },
+  "engines": { "node": ">=20" },
+  "repository": { "type": "git", "url": "https://github.com/Alex-Xandre/RLS-Harness" },
+  "keywords": ["postgres", "supabase", "rls", "row-level-security", "multi-tenant", "security", "testing"],
+  "author": "Alexander Micua",
+  "license": "MIT"
+}
